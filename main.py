@@ -65,5 +65,4 @@ def find_mystery():
 
 print(f'Today\'s mysteries are the {MYSTERY}')
 print(find_mystery())
-print('Version = Beta')
 
