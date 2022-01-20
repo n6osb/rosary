@@ -42,7 +42,7 @@ def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-def dirty_mystery():
+def int_mystery():
 
     if (today == 0, 5) is True:
         return 'joyful'
@@ -56,13 +56,13 @@ def dirty_mystery():
     elif (today == 3) is True:
         return 'luminous'
 
-CLEAN_MYSTERY = str(dirty_mystery())
+MYSTERY = str(int_mystery())
 
 def find_mystery():
 
-    return mysteries.get(CLEAN_MYSTERY)
+    return mysteries.get(MYSTERY)
 
 
-print(f'Today\'s mysteries are the {CLEAN_MYSTERY}')
+print(f'Today\'s mysteries are the {MYSTERY}')
 print(find_mystery())
 
