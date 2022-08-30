@@ -37,14 +37,13 @@ mysteries = {
 
 today = date.today().weekday()
 
-
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def int_mystery():
 
-    if (today == 0, 5) is True:
+    if (today in  (0, 5)) is True:
         return 'joyful'
 
     elif (today in (1, 4)) is True:
